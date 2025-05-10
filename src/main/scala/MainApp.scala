@@ -23,7 +23,7 @@ object MainApp {
     val kafkaProduct = new EnhancedKafkaDataProduct(
       spark,
       "localhost:9092",
-      dataMesh.qualityMonitor // Теперь доступ через dataMesh.qualityMonitor
+      dataMesh.qualityMonitor
     )
 
     val joinedStream = kafkaProduct.joinStreams("sales", "customers", "customer_id")
