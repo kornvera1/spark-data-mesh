@@ -1,6 +1,6 @@
 
 # Data Mesh Prototype with Spark
-## Project Overview
+## 👩‍💻 Project Overview
 
 This project implements a Data Mesh architecture prototype where:
 - Data is treated as a product
@@ -8,7 +8,7 @@ This project implements a Data Mesh architecture prototype where:
 - Platform provides self-serve infrastructure
 - Federated governance is applied
 
-## Technology Stack
+## 📊 Technology Stack
 
 - **Language**: Scala 2.12/2.13
 - **Processing**: Apache Spark 3.3+
@@ -17,16 +17,14 @@ This project implements a Data Mesh architecture prototype where:
 - **Quality**: Custom monitoring
 - **Access**: RBAC model
 
-## Quick Start
-
-### Prerequisites
+### ✍ Prerequisites
 
 1. JDK 8/11
 2. Scala 2.12+
 3. Spark 3.3+
 4. Kafka (for streaming)
 
-### Installation
+### 💫 Installation
 
 ```bash
 git clone https://github.com/your-repo/data-mesh-prototype.git
@@ -35,7 +33,7 @@ sbt compile
 sbt "runMain MainApp"
 ```
 
-## Project Structure
+## 🌐 Project Structure
 
 ```
 src/
@@ -49,7 +47,7 @@ src/
 └── test/                    # Unit tests
 ```
 
-## Key Features
+## 🗝 Key Features
 
 1. **Domain-oriented data products**
 ```scala
@@ -75,7 +73,7 @@ qualityMonitor.checkQuality(df, "sales-product")
 accessManager.checkAccess(user, metadata)
 ```
 
-## Example Usage
+## ✅ Example Usage
 
 ```scala
 val spark = SparkSession.builder()
